@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario HTML5 Marcelo Bencini</title>
+  <script src="https://kit.fontawesome.com/47d57e6119.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <form class="row g-3 p-4 border">
+    <div class="box-header text-bg-light border text-black ">
+      <h2>Payment form example</h2>
+    </div><br>
+    <div class="alert alert-danger" role="alert"> <strong>Some fields are missing</strong></div><br>
+    <div class="col-md-5">
+      <label for="password" class="form-label">Card#</label>
+      <input type="password" class="form-control" id="Card#" placeholder="XXXXXXXXXXXXXXXX">
+    </div>
+    <div class="col-md-3">
+      <label for="CVC#" class="form-label">CVC#</label>
+      <input type="password" class="form-control" id="CVC#" placeholder="0000">
+    </div>
+    <div class="col-md-4">
+
+      <label for="amount" class="form-label">amount</label>
+      <div class="d-flex"><span class="d-block">$</span>
+        <input type="text" class="form-control" placeholder="amount"
+          aria-label="Dollar amount (with dot and two decimal places)">
+      </div>
+
+
+    </div>
+    <div class="col-md-6">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name">
+    </div>
+    <div class="col-md-6">
+      <label for="Last-name" class="form-label">Last name</label>
+      <input type="text" class="form-control" id="Last-name">
+    </div>
+    <div class="col-md-6">
+      <label for="City" class="form-label">City</label>
+      <input type="text" class="form-control" id="City">
+    </div>
+    <div class="col-md-3">
+      <label for="State" class="form-label">State</label>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>pick a State</option>
+        <option value="1">Arica</option>
+        <option value="2">Iquique</option>
+        <option value="3">Antofagasta</option>
+        <option value="4">Coquimbo</option>
+        <option value="5">valparaiso</option>
+        <option value="6">Region Metropolitana</option>
+        <option value="7">Rancagua</option>
+        <option value="8">Maule</option>
+        <option value="9">Bio-Bio</option>
+      </select>
+    </div>
+    <div class="col-md-3">
+      <label for="postal-code" class="form-label">Postal Code</label>
+      <input type="text" class="form-control" id="postal-code">
+    </div>
+    <div class="col-md-6 ">
+      <label>We accept</label>
+      <div class="text-bg-secondary w-50">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+          <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-visa"></i></label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+          <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-mastercard"></i></label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+          <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-diners-club"></i></label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+          <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-apple-pay"></i></label>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="mb-3">
+        <label for="message" class="form-label">message</label>
+        <textarea class="form-control" id="message" rows="3"></textarea>
+        <div id="message" class="form-text">
+          Add any notes here.
+        </div>
+      </div>
+    </div>
+    <div class="box-buttom text-bg-light border text-black d-flex justify-content-end ">
+
+      <button type="button" class="btn btn-secondary">Cancel</button>
+      <button type="button" class="btn btn-primary">Send</button>
+
+    </div>
+  </form>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"
+    integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
